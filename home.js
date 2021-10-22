@@ -124,8 +124,8 @@ const deals = [
 */
 
 //CODE HERE
-
-
+const newDeals = deals.replace("15", "10")
+console.log(newDeals)
 
 /*
     The restaurant is going to continue its
@@ -141,3 +141,4 @@ const deals = [
 */
 
 //CODE HERE
+newDeal = newDeal.replace("March", "April").trim
