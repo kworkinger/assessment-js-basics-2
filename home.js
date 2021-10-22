@@ -80,15 +80,12 @@ function canWeDeliver(zipCode) {
 const canWeDeliverTwo = zipCode => {
     for (i = 0; i < deliveryAreaZipCodes.length; i++) {
         if(zipCode === deliveryAreaZipCodes[i]) {
-            console.log(`You're in our delivery zone!`)
-            break
-        } else {
-            console.log(`Sorry, we can't deliver to that address.`)
+        return `You're in our delivery zone!`
         }
     }
+    return `Sorry, we can't deliver to that address.`
 }
-
-canWeDeliverTwo(85205)
+console.log(canWeDeliverTwo(85205))
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -124,8 +121,7 @@ const deals = [
 */
 
 //CODE HERE
-const newDeals = deals.replace("15", "10")
-console.log(newDeals)
+deals[0].title = deals[0].title.replace("15", "10")
 
 /*
     The restaurant is going to continue its

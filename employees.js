@@ -51,7 +51,7 @@ let empOne = new Employee("Jess", "weekday mornings, weekday afternoons")
 */
 
 //CODE HERE
-empOne(getSchedule())
+empOne.getSchedule()
 
 /*
     Make a copy of the empOne object
@@ -66,7 +66,7 @@ empOne(getSchedule())
 */
 
 //CODE HERE
-const empTwo = [...empOne]
+const empTwo = {...empOne, name: "Nick"}
 
 
 //////////////////PROBLEM 2////////////////////
@@ -99,7 +99,7 @@ class Manager extends Emp {
     super(shifts)
     this.employees
     }
-    
+
 }
 
 
