@@ -20,6 +20,15 @@
 */
 
 //CODE HERE
+class Employee {
+    constructor(name, shifts) {
+        this.name = name
+        this.shifts = shifts
+    }
+    getSchedule(){
+
+    }
+}
 
 
 
@@ -34,6 +43,7 @@
 */
 
 //CODE HERE
+let empOne = new Employee("Jess", "weekday mornings, weekday afternoons")    
 
 /*
     Call the `getSchedule` method on the
@@ -41,7 +51,7 @@
 */
 
 //CODE HERE
-
+empOne(getSchedule())
 
 /*
     Make a copy of the empOne object
@@ -56,7 +66,7 @@
 */
 
 //CODE HERE
-
+const empTwo = [...empOne]
 
 
 //////////////////PROBLEM 2////////////////////
@@ -83,7 +93,14 @@
 */
 
 //CODE HERE
-
+class Manager extends Emp {
+    constructor(name, shifts, employees) {
+    super(name)
+    super(shifts)
+    this.employees
+    }
+    
+}
 
 
 /*
