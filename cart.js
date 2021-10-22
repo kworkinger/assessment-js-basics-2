@@ -34,9 +34,8 @@ const cart = [
 ]
 
 //CODE HERE
-
-// const summedPrice = cart.reduce(/* CALLBACK HERE */)
-
+const summedPrice = cart.reduce((acc, curr) => acc + curr.price, 0)
+// console.log(summedPrice)
 
 //////////////////PROBLEM 2////////////////////
 /*  
@@ -54,7 +53,7 @@ const cart = [
 */
 
 //CODE HERE
-
+const finalPrice = (cartTotal, couponValue, tax) => ((cartTotal * (1 + tax)) - couponValue)
 
 
 //////////////////PROBLEM 3////////////////////
@@ -79,6 +78,12 @@ const cart = [
 
 /*
     TEXT ANSWER HERE
+//customer name, phone, email, billing address, cc info parameters for checkout
+//For a customer to put in an online order we need this info, name to assign the order to
+//phone number to call in case of questions about the order, or to inform order is ready
+//email to provide confirmation of purchase and other offers
+//billing address for cc
+//cc info for processing payment
 
 */
 
@@ -88,3 +93,14 @@ const cart = [
 */
 
 //CODE HERE
+const customer = {
+    name: "Jenny",
+    phone: 8018675309,
+    email: "jennyigotyour#@gmail.com",
+    billingAddress: "1 Cherry St, Lehi, Ut, 84601",
+    ccType: "VISA",
+    ccNum: 1234567891011123,
+    ccExp: 01/22,
+    ccCVV: 999,
+    ccZip: 84601
+}
