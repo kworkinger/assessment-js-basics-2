@@ -31,6 +31,14 @@
 */
 
 //CODE HERE
+// const pizza = {
+//     name: "pepperoni",
+//     price: 20,
+//     category: "entree",
+//     popularity: 9,
+//     rating: 8,
+//     tags: ["#meatlovers","#pizza", "#pepperoni"]
+// }
 
 
 
@@ -43,7 +51,7 @@
 */
 
 //CODE HERE
-
+// console.log(pizza.popularity)
 
 /*
     Second, log the second tag in your pizza's
@@ -53,7 +61,7 @@
 */
 
 //CODE HERE
-
+// console.log(pizza.tags[1])
 
 /*
     Third, destructure the price off of the
@@ -63,7 +71,8 @@
 */
 
 //CODE HERE
-
+// let {price} = pizza
+// console.log(price)
 
 /*
     Fourth, and last, destructure the category
@@ -72,8 +81,9 @@
     Print the value of your category variable. 
 */
 
-//CODE HERE
-
+// //CODE HERE
+// let {category} = pizza
+// console.log(category)
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -88,6 +98,47 @@
 */
 
 //CODE HERE
+const foodArr = [{
+    name: "ca burrito",
+    price: 10,
+    category: "entree",
+    popularity: 10,
+    rating: 8.2,
+    tags: ["#tacoshop", "#caburrito"]
+},
+{
+    name: "chicken taco plate",
+    price: 12,
+    category: "entree",
+    popularity: 8,
+    rating: 7.9,
+    tags: ["#mexicanfood", "#tacos", "#chicken"]
+},
+{
+    name: "flan",
+    price: 3,
+    category: "dessert",
+    popularity: 6,
+    rating: 6,
+    tags: ["#desserts", "#flan"]
+},
+{
+    name: "rice pudding",
+    price: 4,
+    category: "dessert",
+    popularity: 7,
+    rating: 7.8,
+    tags: ["#desserts"]
+},
+{
+    name: "mango smoothie",
+    price: 5,
+    category: "drinks",
+    popularity: 9,
+    rating: 9,
+    tags: ["#smoothie", "#healthy", "#natural"]
+}
+]
 
 
 
@@ -105,7 +156,8 @@
 
 //CODE HERE
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
+const filteredFood = foodArr.filter(element => element.tags === "#mexicanfood")
+console.log(filteredFood)
 
 
 
