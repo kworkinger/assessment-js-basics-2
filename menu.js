@@ -156,14 +156,13 @@ const foodArr = [{
 
 //CODE HERE
 
-const filteredFood = foodArr.filter(element => {
-    if (element.tags.includes("#mexicanfood")) {
+const filteredFood = foodArr.filter((element) => {
+    if (foodArr.element[property] === property) {
         return element;
     }
-    }
-console.log(filteredFood)
+    })
 
-
+filteredFood()
 
 //////////////////PROBLEM 5////////////////////
 /* 
@@ -205,24 +204,24 @@ console.log(filteredFood)
 */
 
 //CODE HERE
-const filterByProperty = (property, number, type) => {
-    let filteredArr = []
-    if (type === "above") {
-        foodArr.filter(element => {
-            if(element[property] > number) {
-                filteredArr.push(element)
-            }
-        })
-    } else if (type === "below") {
-        foodArr.filter((element)) => {
-        if(element[property] < number) {
-            filteredArr.push(element)
-        }
-    }
-}
-}
+// const filterByProperty = (property, number, type) => {
+//     let filteredArr = []
+//     if (type === "above") {
+//         foodArr.filter(element => {
+//             if(element[property] > number) {
+//                 filteredArr.push(element)
+//             }
+//         })
+//     } else if (type === "below") {
+//         foodArr.filter((element)) => {
+//         if(element[property] < number) {
+//             filteredArr.push(element)
+//         }
+//     }
+// }
+// }
 
-const filterbyProperty = (property, number, type) => {
+const filterByProperty = (property, number, type) => {
     const filteredFood = foodArr.filter((element) => {
         if(type === "above") {
             return element[property] >= number
@@ -240,3 +239,4 @@ const filterbyProperty = (property, number, type) => {
 */
 
 //CODE HERE
+filterByProperty("rating", 8.5, "above")
